@@ -1,35 +1,42 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
-import WorkImage from "./WorkImage";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { MdArrowBack, MdArrowForward, MdArrowOutward } from "react-icons/md";
 
 const projects = [
   {
     title: "Phishing Detection System",
     category: "Final Year Project — Cybersecurity ML Tool",
     tools: "FastAPI, XGBoost, Streamlit, VirusTotal API, WHOIS, SSL Checker",
-    image: "/images/placeholder.webp",
+    color: "#0f3460",
+    accent: "#e94560",
+    emoji: "🛡️",
     link: "https://alza4872-crypto.github.io",
   },
   {
     title: "YouTube Transcript Agent",
     category: "Automation Pipeline",
     tools: "n8n, Python, YouTube API, Excel Output",
-    image: "/images/placeholder.webp",
+    color: "#1a1a2e",
+    accent: "#16213e",
+    emoji: "⚡",
     link: "https://alza4872-crypto.github.io",
   },
   {
     title: "Vulnerability Assessment",
     category: "Cybersecurity — Nessus Report",
     tools: "Nessus, Windows, CVE Analysis, Remediation Report",
-    image: "/images/placeholder.webp",
+    color: "#1b262c",
+    accent: "#0f4c75",
+    emoji: "🔍",
     link: "https://alza4872-crypto.github.io",
   },
   {
     title: "Crowd Violence Detection",
     category: "AI / Computer Vision",
     tools: "ConvLSTM, Python, OpenCV, Real-time Alerts",
-    image: "/images/placeholder.webp",
+    color: "#2d132c",
+    accent: "#ee4540",
+    emoji: "🤖",
     link: "https://alza4872-crypto.github.io",
   },
 ];
@@ -68,7 +75,6 @@ const Work = () => {
         </h2>
 
         <div className="carousel-wrapper">
-          {/* Navigation Arrows */}
           <button
             className="carousel-arrow carousel-arrow-left"
             onClick={goToPrev}
@@ -86,7 +92,6 @@ const Work = () => {
             <MdArrowForward />
           </button>
 
-          {/* Slides */}
           <div className="carousel-track-container">
             <div
               className="carousel-track"
@@ -103,9 +108,7 @@ const Work = () => {
                       </div>
                       <div className="carousel-details">
                         <h4>{project.title}</h4>
-                        <p className="carousel-category">
-                          {project.category}
-                        </p>
+                        <p className="carousel-category">{project.category}</p>
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
@@ -113,11 +116,39 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage
-                        image={project.image}
-                        alt={project.title}
-                        link={project.link}
-                      />
+                      <a href={project.link} target="_blank" rel="noreferrer">
+                        <div style={{
+                          width: "100%",
+                          height: "100%",
+                          minHeight: "320px",
+                          background: `linear-gradient(135deg, ${project.color}, ${project.accent})`,
+                          borderRadius: "12px",
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          gap: "1rem",
+                          cursor: "pointer",
+                        }}>
+                          <div style={{ fontSize: "5rem" }}>{project.emoji}</div>
+                          <div style={{
+                            color: "white",
+                            fontSize: "1.1rem",
+                            fontWeight: "600",
+                            textAlign: "center",
+                            padding: "0 2rem",
+                          }}>{project.title}</div>
+                          <div style={{
+                            color: "rgba(255,255,255,0.7)",
+                            fontSize: "0.85rem",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "4px",
+                          }}>
+                            View Project <MdArrowOutward />
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -125,13 +156,11 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Dot Indicators */}
           <div className="carousel-dots">
             {projects.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
-                  }`}
+                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""}`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"
