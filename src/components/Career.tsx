@@ -1,5 +1,4 @@
 import "./styles/Career.css";
-
 const Career = () => {
   return (
     <div className="career-section section-container">
@@ -15,58 +14,57 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>Freelancer</h4>
+                <h5>Self-Employed</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Building Python automation tools, web scrapers, and data pipelines
+              for clients. Specializing in AI text humanization and cybersecurity
+              tools. Active on Fiverr and Upwork.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>IEEE Vice Chair</h4>
+                <h5>Hamdard University</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>2023–NOW</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Serving as Vice Chair at Hamdard University IEEE Student Branch.
+              Contributing to tech events, workshops, and student leadership
+              in the field of cybersecurity and engineering.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>BS Student</h4>
+                <h5>Hamdard University</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2023–2026</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
+              Studying Digital Forensics and Cybersecurity. Built a phishing
+              detection system (FYP) using FastAPI and XGBoost achieving 93%
+              accuracy. Completed hands-on projects in penetration testing,
+              malware analysis, and machine learning.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
+                <h4>ICS</h4>
+                <h5>Rawalpindi College of Commerce</h5>
               </div>
-              <h3>2013-16</h3>
+              <h3>2021–2022</h3>
             </div>
             <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              Completed Intermediate in Computer Science with a focus on
+              programming fundamentals, mathematics, and computer applications.
             </p>
           </div>
         </div>
@@ -74,5 +72,4 @@ const Career = () => {
     </div>
   );
 };
-
 export default Career;
