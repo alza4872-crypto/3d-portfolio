@@ -10,59 +10,26 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Connect</h4>
             <p>
-              <a
-                href="https://www.linkedin.com/in/ali-zameer-1a0775374"
-                target="_blank"
-                rel="noreferrer"
-                data-cursor="disable"
-              >
+              <a href="https://www.linkedin.com/in/ali-zameer-1a0775374" target="_blank" rel="noreferrer" data-cursor="disable">
                 LinkedIn — ali-zameer
               </a>
             </p>
             <h4>Education</h4>
-            <p>
-              BS Digital Forensics & Cybersecurity, Hamdard University — 2023–2026
-            </p>
-            <p>
-              ICS, Rawalpindi College of Commerce — 2021–2022
-            </p>
+            <p>BS Digital Forensics and Cybersecurity, Hamdard University — 2023–2026</p>
+            <p>ICS, Rawalpindi College of Commerce — 2021–2022</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
-            <a
-              href="https://github.com/alza4872-crypto"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="https://github.com/alza4872-crypto" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
               GitHub <MdArrowOutward />
             </a>
-            <a
-              href="https://www.linkedin.com/in/ali-zameer-1a0775374"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="https://www.linkedin.com/in/ali-zameer-1a0775374" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
               LinkedIn <MdArrowOutward />
             </a>
-            <a
-              href="https://alza4872-crypto.github.io"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="https://alza4872-crypto.github.io" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
               Portfolio <MdArrowOutward />
             </a>
-            <a
-              href="mailto:alizameer4872@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="mailto:alizameer4872@gmail.com" data-cursor="disable" className="contact-social">
               Email <MdArrowOutward />
             </a>
           </div>
