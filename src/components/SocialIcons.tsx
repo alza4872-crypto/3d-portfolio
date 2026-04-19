@@ -1,8 +1,7 @@
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
+  FaEnvelope,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
@@ -47,7 +46,6 @@ const SocialIcons = () => {
       };
 
       document.addEventListener("mousemove", onMouseMove);
-
       updatePosition();
 
       return () => {
@@ -60,48 +58,22 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a
-            href="https://github.com/alza4872-crypto"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/alza4872-crypto" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a
-            href="https://www.linkedin.com/in/ali-zameer-1a0775374"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://www.linkedin.com/in/ali-zameer-1a0775374" target="_blank" rel="noreferrer">
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a
-            href="https://alza4872-crypto.github.io"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaYoutube />
-          </a>
-        </span>
-        <span>
-          <a
-            href="mailto:alizameer4872@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram />
+          <a href="mailto:alizameer4872@gmail.com">
+            <FaEnvelope />
           </a>
         </span>
       </div>
-      <a
-        className="resume-button"
-        href="/Ali_Zameer_CV.pdf"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a className="resume-button" href="/Ali_Zameer_CV.docx" target="_blank" rel="noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
